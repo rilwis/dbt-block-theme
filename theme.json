@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"fontFamily": "Avenir, system-ui, sans-serif"
+				},
+				{
+					"name": "Mono",
+					"slug": "mono",
+					"fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+				}
+			],
+			"fluid": false,
+			"fontSizes": [
+				{
+					"name": "XS",
+					"slug": "xs",
+					"size": ".75rem"
+				},
+				{
+					"name": "S",
+					"slug": "s",
+					"size": ".875rem"
+				},
+				{
+					"name": "M",
+					"slug": "m",
+					"size": "1rem"
+				},
+				{
+					"name": "L",
+					"slug": "l",
+					"size": "1.25rem"
+				},
+				{
+					"name": "XL",
+					"slug": "xl",
+					"size": "1.5rem"
+				},
+				{
+					"name": "XXL",
+					"slug": "xxl",
+					"size": "2rem"
+				}
+			]
+		},
+		"color": {
+			"customDuotone": false,
+			"customGradient": false,
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#2e3440",
+					"name": "Text",
+					"slug": "txt"
+				},
+				{
+					"color": "#fff",
+					"name": "Background 1",
+					"slug": "bg-1"
+				},
+				{
+					"color": "#eceff4",
+					"name": "Background 2",
+					"slug": "bg-2"
+				},
+				{
+					"color": "#eceff4",
+					"name": "Line",
+					"slug": "line"
+				},
+				{
+					"color": "#bf616a",
+					"name": "Link",
+					"slug": "link"
+				},
+				{
+					"color": "#242933",
+					"name": "Button Background",
+					"slug": "btn-bg"
+				},
+				{
+					"color": "#fff",
+					"name": "Button Text",
+					"slug": "btn-txt"
+				},
+				{
+					"color": "#88c0d0",
+					"name": "Focus",
+					"slug": "focus"
+				}
+			]
+		},
+		"custom": {
+			"lineHeight": {
+				"text": "1.5",
+				"heading": "1.25"
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "var:preset|color|txt"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|primary",
+			"lineHeight": "var:custom|line-height|text"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var:preset|color|link"
+				}
+			},
+			"button": {
+				"color": {
+					"text": "var:preset|color|btn-txt",
+					"background": "var:preset|color|btn-bg"
+				}
+			},
+			"heading": {
+				"typography": {
+					"lineHeight": "var:custom|line-height|heading"
+				}
+			}
+		}
+	}
+}
